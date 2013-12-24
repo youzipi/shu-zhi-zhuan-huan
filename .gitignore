@@ -1,0 +1,17 @@
+*.sln
+*.sdf
+*.vcxproj*
+*.ipch
+*.suo
+*.opensdf
+
+
+
+################
+Debug
+###############
+*.tlog
+*.log
+*.idb
+*.pdb
+*.lastbuildstate
