@@ -15,7 +15,7 @@ int main(){
 		printf("原数据	原进制	目标进制(<=36)\n");
 		//scanf("%d%d%d",&s,&m,&n);
 		//get();
-		scanf("%s%d%d",s,&m,&n);
+		scanf("%d%d%d",s,&m,&n);
 		if(m > 36 || n >36){
 			printf("ERROR:进制范围为（1~36）");
 			continue;
@@ -24,7 +24,8 @@ int main(){
 			printf("原进制与目标进制不可相同");
 			continue;
 		}
-		len = strlen(s);
+		//len = strlen(s);
+		//printf("%d",len);
 		//for(i = 0;i <len;i++)
 			//if()
 		Convert(s);

@@ -30,7 +30,8 @@ void M2X_ar(int x){
 		x /= n;
 	}//while
 	for(i--;i >= 0;i--)
-		printf("%c",result[i]);
+		putchar(result[i]);
+		//printf("%c",result[i]);
 	printf("\n");
 }//M2X
 

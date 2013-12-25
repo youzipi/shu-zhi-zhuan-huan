@@ -63,11 +63,13 @@ void M2X_st(int s){
 	while(!Empty(S)){
 		Pop(S,e);
 		if(e < 10)
-			printf("%d",e);
+			//printf("%d",e);
+			putchar(e);
 		else{
 			e = e+55;		//转化为对应字母的ASCII码值
 							//另一种表达:e = e-10+'A' );
-			printf("%c\n",e);
+			//printf("%c\n",e);
+			putchar(e);
 		}//else
 	}//while
 	printf("\n");
