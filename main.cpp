@@ -14,10 +14,16 @@ int main(){
 		printf("\n请按要求输入：\n");
 		printf("原数据	原进制	目标进制(<=36)\n");
 		//scanf("%d%d%d",&s,&m,&n);
+		//get();
 		scanf("%s%d%d",s,&m,&n);
-
-		if(m > 36 || n >36)
-			printf("进制范围为（1~36）");
+		if(m > 36 || n >36){
+			printf("ERROR:进制范围为（1~36）");
+			continue;
+		}
+		if(m == n){
+			printf("原进制与目标进制不可相同");
+			continue;
+		}
 		len = strlen(s);
 		//for(i = 0;i <len;i++)
 			//if()

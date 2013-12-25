@@ -5,6 +5,12 @@ int n;	//目标进制
 int len;
 char s[33];
 //int s;
+void get(){
+
+
+}
+
+
 
 void Convert(char *s){
 	int i = 0;
