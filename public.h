@@ -1,13 +1,42 @@
 #define MAX 0x7fffffff
+#include<ctype.h>
+#include<stdio.h>
+#include<string.h>
 
 int m;	//原进制
 int n;	//目标进制
 int len;
 char s[33];
 //int s;
-void get(){
+int Input(){
+	int flag = 0;
 
-
+		printf("\n请按要求输入：\n");
+		printf("原数据	原进制	目标进制(<=36)\n");
+		//scanf("%d%d%d",&s,&m,&n);
+		//get();
+		scanf("%s%d%d",s,&m,&n);
+		if(m > 36 || n >36){
+			printf("ERROR:进制超出范围（1~36）！");
+			flag++;
+		}
+		if(m == n){
+			printf("ERROR：原进制与目标进制相同！");
+			//continue;
+			flag++;
+		}
+		len = strlen(s);
+		int i;
+		for(i = 0;i < len ;i++){
+			int t = s[i];
+			if(isalnum(t))
+				break;
+		}//if
+		if(i != len){
+			printf("ERROR:原数据不合法");
+			flag++;
+		}
+		return flag;
 }
 
 
@@ -24,5 +53,3 @@ void Convert(char *s){
 		i++;
 	}
 }
-
-
