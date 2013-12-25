@@ -9,17 +9,20 @@ typedef struct{
 	int stacksize;
 } Stack;
 
+int InitStack(Stack &S);
 int Empty(Stack &S);
 
-int Push(Stack &S);
-void conservasion(Stack &S,int R,int N,int &e);
-int Stack2d(int s,int m,int n);
+int Push(Stack &S,int e);
+int Pop(Stack &S,int &e);
+//void conservasion(Stack &S,int R,int N,int &e);
+void M2X(int s,int m,int n);
 
 
 int InitStack(Stack &S){
 	S.base = (int *)malloc(INIT_SIZE * sizeof(int));
 	if(!S.base)
 		exit(0);
+
 	S.top = S.base;
 	S.stacksize = INIT_SIZE;
 	return OK;
@@ -45,14 +48,17 @@ int Empty(Stack &S){
 }
 
 
-void conservasion(int &s,int m,int n,int &e){
+//void M2D(int &s,int m,int n,int &e){
+void M2X(int s,int m,int n){
 	Stack S;
+	int e;
 	InitStack(S);
 
 	while(s){
 		Push(S,s % m);
 		s = s/m;
 	}
+
 	while(!Empty(S)){
 		Pop(S,e);
 		if(e < 10)
@@ -62,6 +68,7 @@ void conservasion(int &s,int m,int n,int &e){
 			printf("%c\n",e);
 		}//else
 	}//while
+	printf("\n");
 }
 
 
