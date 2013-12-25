@@ -66,6 +66,7 @@ void M2X_st(int s){
 			printf("%d",e);
 		else{
 			e = e+55;		//转化为对应字母的ASCII码值
+							//另一种表达:e = e-10+'A' );
 			printf("%c\n",e);
 		}//else
 	}//while

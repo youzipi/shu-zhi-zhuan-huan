@@ -1,8 +1,10 @@
 #include"public.h"
 #include"array.h"
 #include"stack.h"
-#include<windows.h>
+#include"digui.h"
+//#include<windows.h>
 #include<stdio.h>
+#include<string.h>
 
 int main(){
 	int x;
@@ -28,8 +30,8 @@ int main(){
 		M2X_ar(x);
 		printf("\n%d进制 栈实现：",n);
 		M2X_st(x);
-
-
+		printf("\n%d进制 递归实现：",n);
+		M2X_dg(x);
 	}
 	return 0;
 }
