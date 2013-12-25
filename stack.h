@@ -49,14 +49,15 @@ int Empty(Stack &S){
 
 
 //void M2D(int &s,int m,int n,int &e){
-void M2X(int s,int m,int n){
+//void M2X_st(int s,int m,int n){
+void M2X_st(int s){
 	Stack S;
 	int e;
 	InitStack(S);
 
 	while(s){
-		Push(S,s % m);
-		s = s/m;
+		Push(S,s % n);
+		s = s / n;
 	}
 
 	while(!Empty(S)){

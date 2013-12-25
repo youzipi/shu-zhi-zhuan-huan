@@ -9,7 +9,7 @@ int main(){
 	while(1){
 		//system("pause");
 		//system("cls");
-		printf("请按要求输入：\n");
+		printf("\n请按要求输入：\n");
 		printf("原数据	原进制	目标进制(<=36)\n");
 		//scanf("%d%d%d",&s,&m,&n);
 		scanf("%s%d%d",s,&m,&n);
@@ -20,12 +20,15 @@ int main(){
 		//for(i = 0;i <len;i++)
 			//if()
 		Convert(s);
-		x = M2D(len);
-		printf("\n10进制：%d\n",x);
+		x = M2D_ar(len);
+		printf("\n10进制	：%d",x);
 
 		//M2X(s,m,10);
-		printf("\n栈实现 %d进制：",n);
-		//M2X(s,m,n);
+		printf("\n%d进制 数组实现：",n);
+		M2X_ar(x);
+		printf("\n%d进制 栈实现：",n);
+		M2X_st(x);
+
 
 	}
 	return 0;
