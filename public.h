@@ -17,11 +17,11 @@ int Input(){
 		//get();
 		scanf("%s%d%d",s,&m,&n);
 		if(m > 36 || n >36){
-			printf("ERROR:进制超出范围（1~36）！");
+			printf("\aERROR:进制超出范围（1~36）！\n");
 			flag++;
 		}
 		if(m == n){
-			printf("ERROR：原进制与目标进制相同！");
+			printf("\aERROR：原进制与目标进制相同！\n");
 			//continue;
 			flag++;
 		}
@@ -33,7 +33,7 @@ int Input(){
 				break;
 		}//if
 		if(i != len){
-			printf("ERROR:原数据不合法");
+			printf("\aERROR:原数据不合法\n");
 			flag++;
 		}
 		return flag;
