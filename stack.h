@@ -70,7 +70,7 @@ void M2X_st(int s){
 			printf("%c\n",e);
 		}//else
 	}//while
-	printf("\n");
+	//printf("\n");
 }
 
 

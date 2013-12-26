@@ -31,6 +31,6 @@ void M2X_ar(int x){
 	}//while
 	for(i--;i >= 0;i--)
 		printf("%c",result[i]);
-	printf("\n");
+	//printf("\n");
 }//M2X
 

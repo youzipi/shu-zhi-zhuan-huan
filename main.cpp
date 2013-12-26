@@ -32,14 +32,14 @@ int main(){
 			continue;
 		Convert(s);
 		x = M2D_ar(len);
-		printf("\n10进制	：%d",x);
+		printf("\n10进制	         ：%d",x);
 
 		//M2X(s,m,10);
-		printf("\n%d进制 数组实现：",n);
+		printf("\n%d进制（数组实现）：",n);
 		M2X_ar(x);
-		printf("\n%d进制 栈实现：",n);
+		printf("\n%d进制（栈实现）  ：",n);
 		M2X_st(x);
-		printf("\n%d进制 递归实现：",n);
+		printf("\n%d进制（递归实现）：",n);
 		M2X_dg(x);
 	}
 	return 0;
