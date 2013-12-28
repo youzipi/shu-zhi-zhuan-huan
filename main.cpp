@@ -1,7 +1,7 @@
 #include"public.h"
 #include"array.h"
 #include"stack.h"
-#include"recursion.h"
+#include"recurision.h"
 //#include<windows.h>
 #include<stdio.h>
 
