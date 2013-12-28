@@ -32,7 +32,7 @@ int main(){
 			continue;
 		Convert(s);
 		x = M2D_ar(len);
-		printf("\n10进制	         ：%d",x);
+		printf("\n10进制	          ：%d",x);
 
 		//M2X(s,m,10);
 		printf("\n%d进制（数组实现）：",n);

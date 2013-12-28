@@ -24,8 +24,8 @@ int Input(){
 		return flag;
 	}
 
-	if(m > 36 || n >36){
-		printf("\aERROR02:进制超出范围（1~36）！\n");
+	if(m > 36 || n >36 || (m < 2) || (n < 2)){
+		printf("\aERROR02:进制超出范围（2~36）！\n");
 		flag++;
 		return flag;
 	}
