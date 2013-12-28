@@ -11,13 +11,12 @@ typedef struct{
 
 int InitStack(Stack &S);
 int Empty(Stack &S);
-
 int Push(Stack &S,int e);
 int Pop(Stack &S,int &e);
-//void conservasion(Stack &S,int R,int N,int &e);
-void M2X(int s,int m,int n);
 
+void M2X_st(int x);
 
+//初始化栈
 int InitStack(Stack &S){
 	S.base = (int *)malloc(INIT_SIZE * sizeof(int));
 	if(!S.base)
@@ -27,37 +26,35 @@ int InitStack(Stack &S){
 	S.stacksize = INIT_SIZE;
 	return OK;
 }
-
+//入栈
 int Push(Stack &S,int e){
-	//if()
 	*S.top = e;
 	S.top++;
 	return OK;
 }
 
-
+//出栈
 int Pop(Stack &S,int &e){
 
 	S.top--;
 	e = *S.top;
 	return OK;
 }
-
+//判断栈是否为空
 int Empty(Stack &S){
 	return S.top == S.base ;
 }
 
-
-//void M2D(int &s,int m,int n,int &e){
-//void M2X_st(int s,int m,int n){
-void M2X_st(int s){
+//栈实现10进制数x转化为n进制数
+//参数：x:原数据对应的十进制数x
+void M2X_st(int x){
 	Stack S;
 	int e;
 	InitStack(S);
 
-	while(s){
-		Push(S,s % n);
-		s = s / n;
+	while(x){
+		Push(S,x % n);
+		x = x / n;
 	}
 
 	while(!Empty(S)){
@@ -66,11 +63,9 @@ void M2X_st(int s){
 			printf("%d",e);
 		else{
 			e = e+55;		//转化为对应字母的ASCII码值
-							//另一种表达:e = e-10+'A' );
 			printf("%c",e);
 		}//else
 	}//while
-	//printf("\n");
 }
 
 

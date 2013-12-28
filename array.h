@@ -1,6 +1,7 @@
-//int Turn_10(int x,int m){
-//	while()
 #include<stdio.h>
+//将m进制数转换成10进制并返回
+//参数：l：原数据的长度
+//		result:转换成10进制后的值
 int M2D_ar(int l){
 	int a[32],// = {l},
 		i = 0,
@@ -16,7 +17,8 @@ int M2D_ar(int l){
 	return result;
 }//M2D
 
-
+//数组实现10进制数x转换成n进制数
+//参数：x:原数据对应的十进制数
 void M2X_ar(int x){
 	int i = 0,
 		t;

@@ -1,19 +1,8 @@
 #include<stdio.h>
-
+//递归实现10进制数x转化为n进制数
+//参数：x:原数据对应的十进制数x
 void M2X_rec(int x){
 	int r;
-	//while(x){
-	//if(x){
-	//	//x = x / n;
-	//	M2X_dg(x / n);
-	//	t = x % n;
-
-	//	if(t > 9)
-	//		printf("%c",t - 10 + 'A');
-	//	else
-	//		printf("%c",t + '0');
-	//	
-	//}//while
 	r = x % n;
 	if(x >= n)
 		M2X_rec(x / n);
