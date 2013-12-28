@@ -1,7 +1,7 @@
 #include"public.h"
 #include"array.h"
 #include"stack.h"
-#include"digui.h"
+#include"recursion.h"
 //#include<windows.h>
 #include<stdio.h>
 
@@ -40,7 +40,7 @@ int main(){
 		printf("\n%d进制（栈实现）  ：",n);
 		M2X_st(x);
 		printf("\n%d进制（递归实现）：",n);
-		M2X_dg(x);
+		M2X_rec(x);
 	}
 	return 0;
 }

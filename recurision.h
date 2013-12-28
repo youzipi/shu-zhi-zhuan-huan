@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void M2X_dg(int x){
+void M2X_rec(int x){
 	int r;
 	//while(x){
 	//if(x){
@@ -16,7 +16,7 @@ void M2X_dg(int x){
 	//}//while
 	r = x % n;
 	if(x >= n)
-		M2X_dg(x / n);
+		M2X_rec(x / n);
 	if(r < 10)
 		putchar(r + '0');
 	else
